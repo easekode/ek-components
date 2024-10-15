@@ -1,0 +1,16 @@
+export const FormFieldLabels = {
+  COURSE_TITLE: 'Course Title',
+  COURSE_DESCRIPTION: 'Course Description',
+  COURSE_DURATION: 'Course Duration',
+  COURSE_DURATION_UNIT: 'Unit',
+  META_TITLE: 'Meta Title',
+  META_DESCRIPTION: 'Meta Description',
+  META_KEYWORDS: 'Meta Keywords',
+  DURATION_UNIT: 'Duration Unit',
+  DURATION: 'Duration',
+  USER_NAME: 'User Name',
+  EMAIL: 'Email',
+  PHONE_NO: 'Phone No',
+  SELECT_COURSE: 'Select Course',
+  BATCH_NAME: 'Batch Name',
+};

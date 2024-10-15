@@ -1,0 +1,58 @@
+export const columnsFields = [
+  { field: 'id', headerName: 'ID' },
+  { field: 'first_name', headerName: 'First Name' },
+  { field: 'last_name', headerName: 'Last Name' },
+  { field: 'email', headerName: 'Email' },
+  { field: 'gender', headerName: 'Gender' },
+  { field: 'date_of_birth', headerName: 'Date of Birth' },
+  { field: 'phone', headerName: 'Phone' },
+  { field: 'state', headerName: 'State' },
+];
+
+export const rows = [
+  {
+    id: 1,
+    SlNo: 1,
+    Assessment: 'Assessment1',
+    Status: 'Status',
+    Description: 'Description',
+    Level: 'Level',
+    Timer: 'Timer',
+  },
+  {
+    id: 2,
+    SlNo: 2,
+    Assessment: 'Assessment1',
+    Status: 'Status',
+    Description: 'Description',
+    Level: 'Level',
+    Timer: 'Timer',
+  },
+  {
+    id: 3,
+    SlNo: 3,
+    Assessment: 'Assessment1',
+    Status: 'Status',
+    Description: 'Description',
+    Level: 'Level',
+    Timer: 'Timer',
+  },
+  {
+    id: 4,
+    SlNo: 4,
+    Assessment: 'Assessment1',
+    Status: 'Status',
+    Description: 'Description',
+    Level: 'Level',
+    Timer: 'Timer',
+  },
+  {
+    id: 5,
+    SlNo: 5,
+    Assessment: 'Assessment1',
+    Status: 'Status',
+    Description: 'Description',
+    Level: 'Level',
+    Timer: 'Timer',
+  },
+];
