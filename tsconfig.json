@@ -23,8 +23,8 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
-      "@ek-components": ["../ek-components/"],
-      "@ek-components/*": ["../ek-components/*"],
+      "@ek-components": ["../components/"],
+      "@ek-components/*": ["../components/*"],
       "@ek-types": ["../types/"]
     }
   },
