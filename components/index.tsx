@@ -17,7 +17,6 @@ export * from './TitleHeader/index';
 export * from './Stat/index';
 export * from './DatePicker/index';
 export * from './Calendar/index';
-export * from './ScheduleEvent/index';
 export * from './Alert/AlertContext';
 export * from './Alert/index';
 export * from './Auth/Login/index';

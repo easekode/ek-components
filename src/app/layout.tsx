@@ -17,7 +17,6 @@ import { ThemeProvider } from '@emotion/react';
 import { AlertContextProvider } from '@ek-components/Alert/AlertContext';
 import { AlertComponent } from '@ek-components/Alert';
 import { AuthProvider } from '@ek-components/Auth';
-import { AuthScreenProvider } from '@/app/auth/AuthScreenContext';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 
@@ -40,17 +39,15 @@ export default function RootLayout({
         <Provider store={store}>
           <AuthProvider>
             <AlertContextProvider>
-              <AuthScreenProvider>
-                <ThemeProvider theme={theme}>
-                  {/* <Layout> */}
-                  <ModalContextProvider>
-                    <Modal />
-                    <AlertComponent />
-                    <body className={inter.className}>{children}</body>
-                  </ModalContextProvider>
-                  {/* </Layout> */}
-                </ThemeProvider>
-              </AuthScreenProvider>
+              <ThemeProvider theme={theme}>
+                {/* <Layout> */}
+                <ModalContextProvider>
+                  <Modal />
+                  <AlertComponent />
+                  <body className={inter.className}>{children}</body>
+                </ModalContextProvider>
+                {/* </Layout> */}
+              </ThemeProvider>
             </AlertContextProvider>
           </AuthProvider>
         </Provider>
