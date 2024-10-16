@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BoxProps, Box, SxProps } from '@mui/material';
-import { displayFlexColumn } from '../../utils/styles';
+import { displayFlexColumn } from '../utils/styles';
 import { BoxContainer } from './BoxContainer/index';
 
 interface FormContainerProps extends BoxProps {

@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
-import { displayFlexColumn } from '../../utils/styles';
-// import { displayFlexColumn } from '@/utils';
+import { displayFlexColumn } from '../utils/styles';
+// import { displayFlexColumn } from '@ek-components/utils';
 
 export const AddAttachment = () => {
   const [attachments, setAttachments] = useState<File[]>([]);

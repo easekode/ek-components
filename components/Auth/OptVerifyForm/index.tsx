@@ -1,6 +1,6 @@
 'use client';
 
-import { AppRoutes } from '@/config/appRoutes';
+import { AppRoutes } from '@ek-components/config/appRoutes';
 import {
   Button,
   BoxContainer,
@@ -20,8 +20,8 @@ import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
-import { getErrorMessage, postApi, putApi } from '@/utils';
-import { ApiUrl } from '@/config/api';
+import { getErrorMessage, postApi, putApi } from '@ek-components/utils';
+import { ApiUrl } from '@ek-components/config/api';
 import OtpInput from 'react-otp-input';
 
 export const OtpVerifyForm = () => {

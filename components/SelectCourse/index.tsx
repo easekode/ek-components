@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import { TextField } from '@ek-components/index';
-import { FormFieldLabels } from '@/constants/formFields';
+import { FormFieldLabels } from '@ek-components/constants/formFields';
 import axios from 'axios';
 
 interface SelectCourseProps {

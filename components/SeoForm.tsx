@@ -6,7 +6,7 @@ user will be able to add meta title, meta description, meta keywords, and open g
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { TextField } from '@ek-components/index';
-import { FormFieldLabels } from '@/constants';
+import { FormFieldLabels } from '@ek-components/constants';
 import { SEOHead } from '@ek-types';
 import { FormContainer } from './Container/index';
 

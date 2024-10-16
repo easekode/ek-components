@@ -1,4 +1,4 @@
-import { AppRoutes } from '@/config/appRoutes';
+import { AppRoutes } from '@ek-components/config/appRoutes';
 import {
   Button,
   BoxContainer,
@@ -15,8 +15,8 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
-import { postApi } from '@/utils';
-import { ApiUrl } from '@/config/api';
+import { postApi } from '@ek-components/utils';
+import { ApiUrl } from '@ek-components/config/api';
 
 interface IFormInput {
   email: string;

@@ -1,4 +1,4 @@
-import { getCookie, setCookie, destroyCookie } from '@/utils';
+import { getCookie, setCookie, destroyCookie } from '@ek-components/utils';
 import { LoginResponse } from '@ek-types';
 import { CookieNames } from './cookieNames';
 

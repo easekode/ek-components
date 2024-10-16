@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { jwtDecode } from 'jwt-decode';
-import { getCookie } from '@/utils';
+import { getCookie } from '@ek-components/utils';
 import { useRouter, usePathname } from 'next/navigation';
-import { postApi } from '@/utils';
+import { postApi } from '@ek-components/utils';
 import { useMutation } from '@tanstack/react-query';
-import { ApiUrl } from '@/config/api';
+import { ApiUrl } from '@ek-components/config/api';
 import { getAccessToken, getRefreshToken } from './authToken';
-import { publicRoutes } from '@/config/publicRoutes';
-import { AppRoutes } from '@/config/appRoutes';
+import { publicRoutes } from '@ek-components/config/publicRoutes';
+import { AppRoutes } from '@ek-components/config/appRoutes';
 interface AuthProviderProps {
   children: React.ReactNode;
 }

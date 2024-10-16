@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { ApiUrl } from '@/config/api';
+import { ApiUrl } from '@ek-components/config/api';
 import { ApiResponse, LoginBody, LoginResponse } from '@ek-types';
-import { getErrorMessage, postApi } from '@/utils';
+import { getErrorMessage, postApi } from '@ek-components/utils';
 
 interface AuthState {
   data: LoginResponse | null;

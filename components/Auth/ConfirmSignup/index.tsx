@@ -1,8 +1,8 @@
 import React from 'react';
 import { useContext } from 'react';
-import { ApiUrl } from '@/config/api';
+import { ApiUrl } from '@ek-components/config/api';
 import { useMutation } from '@tanstack/react-query';
-import { putApi } from '@/utils';
+import { putApi } from '@ek-components/utils';
 import { useRouter } from 'next/navigation';
 import { AlertContext } from '@ek-components/index';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';

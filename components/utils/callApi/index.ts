@@ -1,4 +1,4 @@
-import { ApiUrl, baseUrl } from '@/config/api';
+import { ApiUrl, baseUrl } from '@ek-components/config/api';
 import { getAccessToken } from '@ek-components/Auth/authToken';
 import axios, { AxiosError } from 'axios';
 

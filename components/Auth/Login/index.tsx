@@ -22,9 +22,9 @@ import {
   ErrorDisplay,
   PasswordField,
 } from '@ek-components/index';
-import { postApi, setCookie } from '@/utils';
+import { postApi, setCookie } from '@ek-components/utils';
 import { useRouter } from 'next/navigation';
-import { AppRoutes } from '@/config/appRoutes';
+import { AppRoutes } from '@ek-components/config/appRoutes';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 import Image from 'next/image';
 import {
@@ -34,10 +34,9 @@ import {
   LoginResponse,
 } from '@ek-types';
 import { FacebookOutlined, LinkedIn } from '@mui/icons-material';
-import { login, logout } from '@/redux/slices/auth/authSlice';
+import { login, logout } from '@ek-components/redux/slices/auth/authSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState, AppDispatch } from '@/redux/store';
-import { Message, MessageType } from '@/common';
+import { RootState, AppDispatch } from '@ek-components/redux/store';
 import { setLocalUserInfo } from '../authToken';
 import { AlertContext } from '@ek-components/Alert/AlertContext';
 

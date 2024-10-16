@@ -1,5 +1,5 @@
 import { BoxProps, Box } from '@mui/material';
-import { displayFlexColumn } from '@/utils';
+import { displayFlexColumn } from '@ek-components/utils';
 
 interface ContainerProps extends BoxProps {
   additionalStyles?: any;

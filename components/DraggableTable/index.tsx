@@ -9,7 +9,7 @@ import Paper from '@mui/material/Paper';
 import { DragHandle } from '@mui/icons-material';
 import { DragDropContext, Draggable, Droppable } from '@hello-pangea/dnd';
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
-import { displayFlexRow } from '@/utils';
+import { displayFlexRow } from '@ek-components/utils';
 interface DraggableTableProps<T> {
   rows: T[];
   headings: string[];

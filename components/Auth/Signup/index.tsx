@@ -16,11 +16,11 @@ import {
   theme,
   PasswordField,
 } from '@ek-components/index';
-import { ApiUrl } from '@/config/api';
+import { ApiUrl } from '@ek-components/config/api';
 import { useMutation } from '@tanstack/react-query';
-import { postApi } from '@/utils';
+import { postApi } from '@ek-components/utils';
 import { useRouter } from 'next/navigation';
-import { AppRoutes } from '@/config/appRoutes';
+import { AppRoutes } from '@ek-components/config/appRoutes';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 import Image from 'next/image';
 import { VerifyOtp } from '../ConfirmSignup/index';

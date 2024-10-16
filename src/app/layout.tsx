@@ -18,7 +18,7 @@ import { AlertContextProvider } from '@ek-components/Alert/AlertContext';
 import { AlertComponent } from '@ek-components/Alert';
 import { AuthProvider } from '@ek-components/Auth';
 import { Provider } from 'react-redux';
-import store from '../redux/store';
+import store from '@ek-components/redux/store';
 
 const inter = Inter({ subsets: ['latin'] });
 const queryClient = new QueryClient();

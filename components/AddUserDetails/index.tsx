@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BoxContainer } from '../Container/BoxContainer/index';
 import { TitleHeader } from '../index';
 import { TextField } from '../index';
-import { FormFieldLabels } from '../../src/constants/formFields';
+import { FormFieldLabels } from '@ek-components/constants/formFields';
 import { OkCancel } from '../index';
 
 export interface UserDetails {
