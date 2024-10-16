@@ -22,7 +22,6 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"],
       "@ek-components": ["../components/"],
       "@ek-components/*": ["../components/*"],
       "@ek-types": ["../types/"]
