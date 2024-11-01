@@ -25,6 +25,13 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Build artifacts" || echo "No changes to commit"
+
       - name: Bump version and push tag
         run: |
           npm version patch -m "Release version %s"
@@ -35,4 +42,4 @@ jobs:
       - name: Publish to npm
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
