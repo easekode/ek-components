@@ -55,7 +55,7 @@ export const Modal = () => {
           }}
         />
       </BoxContainer>
-      {modalContent && modalContent}
+      {modalContent && (modalContent as React.ReactNode)}
     </Dialog>
   );
 };
