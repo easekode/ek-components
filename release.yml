@@ -1,0 +1,35 @@
+name: Release to npm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Bump version and push tag
+        run: |
+          npm version patch -m "Release version %s"
+          git push origin main --tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
