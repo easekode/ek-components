@@ -99,7 +99,7 @@ export const ResetPasswordForm = () => {
 
           <FormSubtitle text='Input OTP received and new password to reset' />
 
-          <BoxContainer component='form' onSubmit={handleSubmit(onSubmit)}>
+          <Box component='form' onSubmit={handleSubmit(onSubmit)}>
             {!submitted ? (
               <>
                 <Controller
@@ -188,7 +188,7 @@ export const ResetPasswordForm = () => {
                 </Link>
               </Typography>
             </Box>
-          </BoxContainer>
+          </Box>
         </BoxContainer>
       </BoxContainer>
     </BoxContainer>

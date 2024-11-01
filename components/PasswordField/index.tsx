@@ -9,7 +9,7 @@ import {
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 export const PasswordField = ({
-  label = 'Change Password',
+  label = 'Enter your password',
   name,
   value,
   onChange,

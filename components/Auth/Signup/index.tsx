@@ -104,7 +104,7 @@ export const SignupComponent = () => {
 
             <FormSubtitle text='Enter your name, email and phone number to sign up' />
 
-            <BoxContainer component='form' onSubmit={handleSubmit(onSubmit)}>
+            <Box component='form' onSubmit={handleSubmit(onSubmit)}>
               <Controller
                 name='email'
                 control={control}
@@ -200,7 +200,7 @@ export const SignupComponent = () => {
                   </Link>
                 </Typography>
               </Box>
-            </BoxContainer>
+            </Box>
           </BoxContainer>
         )}
       </BoxContainer>

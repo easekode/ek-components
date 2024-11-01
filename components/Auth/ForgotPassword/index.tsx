@@ -94,7 +94,7 @@ export const ForgotPasswordForm = () => {
 
           <FormSubtitle text='No worries, we will assist you' />
 
-          <BoxContainer component='form' onSubmit={handleSubmit(onSubmit)}>
+          <Box component='form' onSubmit={handleSubmit(onSubmit)}>
             {!submitted ? (
               <>
                 <Controller
@@ -162,7 +162,7 @@ export const ForgotPasswordForm = () => {
                 </Link>
               </Typography>
             </Box>
-          </BoxContainer>
+          </Box>
         </BoxContainer>
       </BoxContainer>
     </BoxContainer>

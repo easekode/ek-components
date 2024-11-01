@@ -4,7 +4,8 @@
     "dev": "next dev -p 8080",
     "build": "next build",
     "lint": "next lint",
-    "precommit": "yarn lint"
+    "precommit": "yarn lint",
+    "main": "index.js"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
