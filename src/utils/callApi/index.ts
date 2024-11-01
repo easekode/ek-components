@@ -1,13 +1,13 @@
 import { ApiUrl, baseUrl } from '@ek-components/config/api';
 import { getAccessToken } from '@ek-components/Auth/authToken';
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError, AxiosRequestConfig } from 'axios';
 
 export interface ApiInput {
   url: ApiUrl;
   params?: Record<string, string | number | boolean | undefined>;
   query?: Record<string, string | number | boolean | undefined>;
   data?: any;
-  config?: axios.AxiosRequestConfig<any>;
+  config?: AxiosRequestConfig<any>;
 }
 // axios hooks to include token
 axios.interceptors.request.use((config) => {
